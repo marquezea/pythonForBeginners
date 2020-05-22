@@ -32,4 +32,6 @@ if __name__ == '__main__':
 
     meteor_data.sort(key=get_dist)
 
-    print(meteor_data[0:10])
+    for m in meteor_data[0:10]:
+        print('Location: {0} is {1}km distance from SP'.format(m['name'], int(m['distance'])))
+    #print(meteor_data[0:10])
